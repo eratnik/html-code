@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name='HandheldFriendly' content='true'/>
+        <meta name='MobileOptimized' content='width'/>
+        <meta name='apple-mobile-web-app-capable' content='yes'/>
+        <title>Таблицы</title>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" alt="logo" height="300">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.htmltable.html">Таблицы</a></li>
+                    <li><a href="lesson-семантическая разметка.html">Образцы семантической разметки</a></li>
+                    <li><a href="lesson-checkbox.html">Формы ввода и чекбоксы</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Создание поля для ввода -->
+        <form action="/people">
+            <input type="text">
+            <br>
+            <input type="text">
+        </form>
+
+        <form action="/login" method="POST">
+            <label for="e-mail">E-mail: </label>
+            <input type="email" placeholder="Ваш e-mail">
+            <label for="password">Пароль: </label>
+            <input type="password" placeholder="Пароль" id="password">
+            <input type="submit">
+        </form>
+
+        <!--создание чекбоксов метод 1-->
+        <form action="/people">
+            <label>
+                <input type="checkbox" name="languages" value="html" checked>
+                Learn html
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="languages" value="css">
+                Learn css
+            </label> 
+        </form>
+        <!--создание чекбоксов метод 2-->
+        <form action="/people">
+            <input id="alisa" type="checkbox" name="family" value="alisa">
+            <label for="alisa">Алиса</label> 
+            <br>
+            <input id="dasha" type="checkbox" name="family" value="dasha">
+            <label for="dasha">Дарья</label>
+        </form>
+
+        <!--Создание радиокнопки вариант 1-->
+        <form action="/people">
+            <label>
+                <input type="radio" name="gender" value="yes">
+                Продолжить учебу 
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="no">
+                Ну его нахер
+            </label>
+        </form>
+        <!--Создание радиокнопки вариант 2-->
+        <form action="/people">
+            <input type="radio" id="answer-yes" name="gender" value="yes">
+            <label for="answer-yes">Продолжить учебу</label>
+            <br>
+            <input type="radio" id="answer-no" name="gender" value="no">
+            <label for="answer-no">Ну его нахер</label>
+        </form>
+
+        <!--создание поля для воода произвольного текста-->
+        <form action="/people">
+            <textarea rows="10" cols="40">Здесь можете написать все, что вы обо мне думаете</textarea>
+        </form>
+
+        <!--Создание списков с единственнм выбором-->
+        <form action="/people">
+            <select>
+                <option disabled>Что ты хочешь съесть?</option>
+                <option>Дыню</option>
+                <option>Арбуз</option>
+                <option>Грушу</option>
+                <option>Банан</option>
+            </select>
+        </form>
+
+        <p><strong>Что будем делать?</strong></p>
+        <form>
+            <select multiple>
+                <option>Выпить вина</option>
+                <option>Съесть пиццу</option>
+                <option>Пойти поспать</option>
+                <option>Пошалить</option>
+            </select>
+        </form>
+
+        <form action="/people">
+            <label>
+            Клиент
+            <input type="text">
+            </label>
+            <label>
+            Блюдо
+            <input type="text">
+            </label>
+            <select multiple size="5" name="option">
+                <optgroup label="Доработать">
+                    <option value="salt">Посолить</option>
+                    <option value="pepper">Поперчить</option>
+                    <option value="sugar">Подсластить</option>
+                </optgroup>
+                <optgroup label="Выкинуть">
+                    <option value="thash">Выкинуть</option>
+                    <option value="packed-and-thash">Завернуть и выкинуть</option>
+                </optgroup>
+            </select>
+            <button type"submit">Отправить</button>
+        </form>
+        </body>
+</html>
