@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Header Styles */
+.header {
+  background: #f8f9fa;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+  float: left;
+  font-size: 24px;
+}
+
+.navigation ul {
+  list-style: none;
+  float: right;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navigation ul li a {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Banner Section */
+.banner {
+  background: url('banner.jpg') no-repeat center center/cover;
+  color: white;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 36px;
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+.btn {
+  background: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* News Section */
+.news {
+  padding: 50px 0;
+  background: #f8f9fa;
+}
+
+.news h2 {
+  text-align: center;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.news-item img {
+  width: 150px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.news-item h3 {
+  margin-bottom: 10px;
+}
+
+/* Features Section */
+.features {
+  padding: 50px 0;
+  background: #fff;
+}
+
+.features h2 {
+  text-align: center;
+}
+
+.feature-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  background: #f8f9fa;
+}
+
+.contact form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-bottom: 10px;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
